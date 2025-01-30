@@ -17,7 +17,7 @@ class _SignUpState extends State<SignUp> {
         child: Stack(
           children: [
             Container(
-              height: MediaQuery.of(context).size.height,
+              height: MediaQuery.of(context).size.height/3.0,
               width: MediaQuery.of(context).size.width,
               decoration: BoxDecoration(
                 gradient: LinearGradient(colors: [
@@ -42,36 +42,47 @@ class _SignUpState extends State<SignUp> {
                       'Sign Up',
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 20.0,
+                        fontSize: 30.0,
                        fontWeight: FontWeight.bold,
                          ),
                     ),
-                    
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(60.0),
-                    child: Column(
-                      children: [
+                     ),
+
                         Center(
                           child: Text(
                             'Sign Up to Your Account',
                           style: TextStyle(
                             color: Colors.white70,
-                            fontSize: 18.0,
+                            fontSize: 17.0,
                             fontWeight: FontWeight.w700,
-                                             ),
+                            ),
                           ),
                         ),
-                      ],
-                    ),
-                  ),
+                        SizedBox(height: 20.0,),
+                        Container(
+                          padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20.0),
+                          child: Material(
+                            elevation: 5.0,
+                            borderRadius: BorderRadius.circular(10),
+                            child: Container(
+                              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+                              height: MediaQuery.of(context).size.height/2.0,
+                              width: MediaQuery.of(context).size.width,
+                              decoration: BoxDecoration(
+                                color:  Colors.white,
+                                borderRadius: BorderRadius.circular(10),
+                                ),
+                                child: Column(
+                                  
+                                ),
+                            ),
+                          ),
+                        )
+                     
                 ],
               ),
-            )
-           
-              
-          
-          ],
+            ),
+            ],
         ),
       ),
     );
