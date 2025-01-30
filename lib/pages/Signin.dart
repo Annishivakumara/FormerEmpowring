@@ -1,4 +1,4 @@
-import 'dart:ffi';
+//import 'dart:ffi';
 
 import 'package:flutter/material.dart';
 
@@ -17,11 +17,10 @@ class SignIn extends StatelessWidget {
               decoration: BoxDecoration(
                 gradient: LinearGradient(colors: 
                 [
-                 Color(0xFF6DD5FA), 
-                 Color(0xFF8E44AD),
-                  Color(0xFFF06292),
-                   
-                ],
+                 Color(0xFF004d26),
+                 Color.fromARGB(255, 0, 104, 51),
+                 Color(0xFF008000),
+                  ],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
                 
@@ -37,7 +36,7 @@ class SignIn extends StatelessWidget {
                   children: [
                     Center(
                       child: Text(
-                       'SignIn',
+                       'Welcome \n  SignIn',
                          style: TextStyle(
                           fontSize: 30.0,
                           color: Colors.white,
