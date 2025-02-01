@@ -141,7 +141,7 @@ class SignIn extends StatelessWidget {
                             SizedBox(height: 50.0,),
                             
                            Center(
-                             child: Container(
+                             child: SizedBox(
                               width: 100,
                                child: Material(
                                 elevation: 10.0,
